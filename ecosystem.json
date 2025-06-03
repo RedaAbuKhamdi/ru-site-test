@@ -1,0 +1,24 @@
+{
+  /**
+   * Application configuration section
+   * http://pm2.keymetrics.io/docs/usage/application-declaration/
+   */
+  apps : [
+
+
+  ],
+
+  /**
+   * Deployment section
+   * http://pm2.keymetrics.io/docs/usage/deployment/
+   */
+  deploy : {
+    staging : {
+      "user" : "root",
+      "host" : "stands.labsystech.ru",
+      "ref"  : "origin/master",
+      "repo" : "git@github.com:rvvslv/laboratory.git",
+      "path" : "/var/www/html/laboratory"
+    }
+  }
+}

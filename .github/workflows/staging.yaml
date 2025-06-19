@@ -17,19 +17,28 @@ jobs:
         with:
           node-version: '20.x'
 
-      - name: Build & commit staging for laboratory
+      - name: Build ru-site-test
         run: |
           npm install
           npx gulp
-      - name: Build & commit staging for cleverappssg.com
+          mkdir -p deploy
+          cp -r ./pages deploy/
+          cp -r ./legal deploy/
+          cp -r ./assets deploy/
+          cp -r ./uploads deploy/
+          cp -r ./ads.txt deploy/
+          cp -r ./app-ads.txt deploy/
+          cp -r ./index.html deploy/
+          cp -r ./style.css deploy/
+
+      - name: Build site-test (Vue)
         run: |
           cd site-test
-          ls
           npm install
           npm run staging_ru
           cp staging/index.html staging/404.html
-          mkdir ../games
-          cp -r ./staging/ ../games/
+          mkdir -p ../deploy/games
+          cp -r ./staging/* ../deploy/games/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

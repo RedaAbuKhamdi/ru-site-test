@@ -31,7 +31,6 @@ jobs:
           echo "Uploads folder content:"
           npm install
           npx gulp
-          ls -l ./uploads
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

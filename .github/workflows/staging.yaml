@@ -22,10 +22,10 @@ jobs:
           npm install
           npx gulp
           mkdir -p deploy
-          cp -r ./pages deploy/
-          cp -r ./legal deploy/
-          cp -r ./assets deploy/
-          cp -r ./uploads deploy/
+          cp -r ./pages deploy/pages
+          cp -r ./legal deploy/legal
+          cp -r ./assets deploy/assets
+          cp -r ./uploads deploy/uploads
           cp -r ./ads.txt deploy/
           cp -r ./app-ads.txt deploy/
           cp -r ./index.html deploy/

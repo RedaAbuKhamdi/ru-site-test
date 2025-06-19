@@ -21,15 +21,6 @@ jobs:
         run: |
           npm install
           npx gulp
-          mkdir -p deploy
-          cp -r ./pages deploy/pages
-          cp -r ./legal deploy/legal
-          cp -r ./assets deploy/assets
-          cp -r ./uploads deploy/uploads
-          cp -r ./ads.txt deploy/
-          cp -r ./app-ads.txt deploy/
-          cp -r ./index.html deploy/
-          cp -r ./style.css deploy/
 
       - name: Build site-test (Vue)
         run: |
@@ -37,8 +28,8 @@ jobs:
           npm install
           npm run staging_ru
           cp staging/index.html staging/404.html
-          mkdir -p ../deploy/games
-          cp -r ./staging/* ../deploy/games/
+          mkdir -p ../games
+          cp -r ./staging/* ../games/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

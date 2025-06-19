@@ -29,9 +29,9 @@ jobs:
       - name: Build ru-site-test
         run: |
           echo "Uploads folder content:"
-          ls -l ./uploads
           npm install
           npx gulp
+          ls -l ./uploads
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

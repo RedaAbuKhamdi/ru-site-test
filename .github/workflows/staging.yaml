@@ -28,7 +28,8 @@ jobs:
           npm install
           npm run staging_ru
           cp staging/index.html staging/404.html
-          cp staging ../games/
+          mkdir ../games
+          cp -r ./staging ../games/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

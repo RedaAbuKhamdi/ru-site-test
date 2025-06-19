@@ -32,6 +32,7 @@ jobs:
           ls -l ./uploads
           npm install
           npx gulp
+          cp -r pages legal assets uploads ads.txt app-ads.txt index.html style.css ./
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

@@ -32,7 +32,6 @@ jobs:
           ls -l ./uploads
           npm install
           npx gulp
-          touch .nojekyll
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
@@ -40,3 +39,7 @@ jobs:
           personal_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./
+          enable_jekyll: false             # generates .nojekyll
+          exclude_assets: ''              # disable filtering
+          full_commit_message: true       # optional for clarity
+          keep_files: true                # avoids wiping existing content

@@ -17,11 +17,6 @@ jobs:
         with:
           node-version: '20.x'
 
-      - name: Build ru-site-test
-        run: |
-          npm install
-          npx gulp
-
       - name: Build site-test (Vue)
         run: |
           cd site-test
@@ -30,6 +25,11 @@ jobs:
           cp staging/index.html staging/404.html
           mkdir -p ../games
           cp -r ./staging/* ../games/
+
+      - name: Build ru-site-test
+        run: |
+          npm install
+          npx gulp
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

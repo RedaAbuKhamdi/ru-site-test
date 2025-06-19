@@ -24,7 +24,7 @@ jobs:
         run: |
           cd site-test
           npm install
-          npm run staging
+          npm run staging_ru
           cp staging/index.html staging/404.html
           cp staging ../games/
 

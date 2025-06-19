@@ -1,11 +1,13 @@
 on:
   push:
     branches: [ master ]
+
 jobs:
   deploy-laboratory:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
       - uses: actions/checkout@v4
         with:
@@ -23,22 +25,33 @@ jobs:
           npm install
           npm run staging_ru
           cp staging/index.html staging/404.html
-          mkdir -p ../games
-          cp -r ./staging/* ../games/
+          mkdir -p ../deploy/games
+          cp -r ./staging/* ../deploy/games/
 
       - name: Build ru-site-test
         run: |
-          echo "Uploads folder content:"
           npm install
           npx gulp
+          mkdir -p deploy
+          cp -r pages deploy/
+          cp -r legal deploy/
+          cp -r assets deploy/
+          cp -r uploads deploy/
+          cp ads.txt deploy/
+          cp app-ads.txt deploy/
+          cp index.html deploy/
+          cp style.css deploy/
+
+      - name: Preview deploy folder
+        run: find deploy -type f
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           personal_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: ./
-          enable_jekyll: false             # generates .nojekyll
-          exclude_assets: ''              # disable filtering
-          full_commit_message: true       # optional for clarity
-          keep_files: true                # avoids wiping existing content
+          publish_dir: ./deploy
+          enable_jekyll: false
+          exclude_assets: ''
+          full_commit_message: true
+          keep_files: true

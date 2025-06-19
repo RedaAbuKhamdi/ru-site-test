@@ -28,7 +28,6 @@ jobs:
 
       - name: Build ru-site-test
         run: |
-          cd ../
           echo "Uploads folder content:"
           ls -l ./uploads
           npm install

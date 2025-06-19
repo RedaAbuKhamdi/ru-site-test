@@ -267,7 +267,7 @@
         transform-origin: center;
         margin-top: -8px;
         border: 0;
-        background: url(../../uploads/icon-arrow-to-bottom.png) no-repeat center / contain;
+        background: url(../../images/icon-arrow-to-bottom.png) no-repeat center / contain;
     }
     .nice-select.open:after {
         -webkit-transform: rotate(-180deg);

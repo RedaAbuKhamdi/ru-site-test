@@ -195,7 +195,7 @@ body.do-css-hover .siteHeader__links-privacy:hover,
 	left: 50%;
 	transform: translateX(-50%);
 	margin: auto;
-	background: url(../../uploads/menu-layout.png) no-repeat top center / cover;
+	background: url(../../images/menu-layout.png) no-repeat top center / cover;
 }
 .siteNav__wrapper {
 	display: flex;

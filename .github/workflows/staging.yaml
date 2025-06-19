@@ -23,6 +23,7 @@ jobs:
       - name: Build & commit staging for cleverappssg.com
         run: |
           cd site-test
+          ls
           npm install
           npm run staging_ru
           cp staging/index.html staging/404.html

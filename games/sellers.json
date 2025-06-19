@@ -1,0 +1,20 @@
+{
+  "contact_address": "6 Eu Tong Sen Street, Soho 1, 09-09, Singapore, 059817",
+  "contact_email": "cleverappssg@gmail.com",
+  "version": "1.0",
+  "sellers": [
+    {
+      "domain": "cleverappssg.com",
+      "name": "Clever Apps Pte. Ltd.",
+      "seller_id": "001",
+      "seller_type": "PUBLISHER"
+    },
+    {
+      "seller_id": "pub-9277187477340577",
+      "seller_type": "PUBLISHER",
+      "name": "Google AdExchange",
+      "domain": "google.com"
+    }
+  ]
+}
+

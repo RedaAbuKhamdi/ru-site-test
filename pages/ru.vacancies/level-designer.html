@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>Lab - Level designer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./../../style.css">
+</head>
+<body class="do-css-hover">
+<header class="siteHeader siteHeader-mini fill-header-on-mobile">
+    <div class="container">
+        <div class="siteHeader__wrapper">
+            <a href="./../../index.html#vacancies" class="siteHeader__logo">
+                <img class="siteHeader__logo-full" src="./../../uploads/logo-full.png" alt="">
+                <img class="siteHeader__logo-mini" src="./../../uploads/logo-mini.png" alt="">
+            </a>
+            <div class="siteSocials">
+                <a href="https://vk.com/labsystech" class="siteSocials__item">
+                    <img src="./../../uploads/vk-icon.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="siteHeader siteHeader-mini siteHeader-fixed">
+    <div class="container">
+        <div class="siteHeader__wrapper">
+            <a href="#" class="siteHeader__logo">
+                <img class="siteHeader__logo-full" src="./../../uploads/logo-full.png" alt="">
+                <img class="siteHeader__logo-mini" src="./../../uploads/logo-mini.png" alt="">
+            </a>
+            <div class="siteSocials">
+                <a href="https://vk.com/labsystech" class="siteSocials__item">
+                    <img src="./../../uploads/vk-icon.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main>
+    <div class="vacancySingle">
+        <div class="container">
+            <div class="vacancySingle__wrapper">
+                <div class="vacancySingle__content">
+                    <div class="vacancySingle__breadcrumbs breadcrumbs">
+                        <a href="./../../index.html#vacancies">Вакансии</a>
+                        <span><img src="./../../uploads/breadcrumbs-arrow.png" alt=""></span>
+                        <span>Level designer</span>
+                    </div>
+                    <div class="vacancySingle__header">
+                        <div class="vacancySingle__header-box">
+                            <div class="vacancySingle__header-icon">
+                                    <span class="media-wrapper">
+                                        <span class="img" style="background-image: url(./../../uploads/icon-map.png);"></span>
+                                    </span>
+                            </div>
+                            <div class="vacancySingle__header-descr">
+                                <h1 class="vacancySingle__title block-title">
+                                    Level designer
+                                </h1>
+                                <p class="vacancySingle__subtitle">
+                                    <img src="./../../uploads/icon-geo.png" alt="">
+                                    <span>Удаленно (любая страна) Опыт 2+ лет</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="vacancySingle__header-buttons">
+                            <button class="active">Детали вакансии</button>
+                        </div>
+                    </div>
+                    <div class="vacancySingle__tabs">
+                        <div class="vacancySingle__tabs-item">
+                            <div class="vacancySingle__text">
+                                <h2>Задачи:</h2>
+                                <ul>
+                                        <li>Анализ игр и их игровых механик с подробным описанием</li>
+                                        <li>Создание новых уровней используя различные игровые механики</li>
+                                        <li>Отыгрывание уровней (проверка)</li>
+                                        <li>Тестирование игр, поиск ошибок</li>
+                                        <li>Сбор и анализ статистики</li>
+                                        <li>Дизайн и наполнение внутриигрового окружения</li>
+                                        <li>Взаимодействие с командой художников и разработчиков</li>
+                                        <li>Улучшение игрового процесса на базе внутренних ревью</li>
+                                </ul>
+                                <h2>Требования:</h2>
+                                <ul>
+                                        <li>Внимательность и организованность</li>
+                                        <li>Игровой опыт</li>
+                                        <li>Знание английского языка</li>
+                                        <li>Опыт работы в геймдеве или смежной отрасли от 2 лет</li>
+                                        <li>Желание развиваться в сфере Gamedev</li>
+                                        <li>Творческий склад ума, креативность</li>
+                                        <li>Умение работать в команде</li>
+                                        <li>Понимание инструментов, технологий и процесса разработки игр</li>
+                                        <li>Готовность к выполнению тестового задания</li>
+                                </ul>
+                                <h2>мы предлагаем:</h2>
+                                <ul>
+                                        <li>Удаленный формат работы (full time): работайте из любого удобного для Вас места</li>
+                                        <li>Демократичное руководство: мы ценим ваши идеи и готовы их обсуждать</li>
+                                        <li>Возможности для профессионального роста и развития: мы поддерживаем ваше стремление к обучению и повышению квалификации</li>
+                                        <li>Конкурентоспособная зарплата: мы предлагаем достойное вознаграждение за ваш труд</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="vacancySingle__tabs-item">
+                            <h2 class="block-title">связаться с нами</h2>
+                            <form class="vacancySingle__form" onsubmit="sendEmail(event)">
+                                <input type="email" class="input-style" id="email" placeholder="Email *" required>
+                                <input type="text" class="input-style" id="name" placeholder="Ваше имя *" required>
+                                <textarea class="input-style" id="message" placeholder="Расскажите о себе, своем опыте работы, приложите ссылки на профили"></textarea>
+                                <button class="button" type="submit">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="vacancySingle__sidebar">
+                    <button class="vacancySingle__sidebar-apply button">Подать заявку</button>
+                    <p class="vacancySingle__sidebar-word">или</p>
+                    <div class="vacancySingle__sidebar-box">
+                        <button target="_blank" onclick="window.open('https://hh.ru/employer/2634665', '_blank')">
+                            <img src="./../../uploads/hh-icon.png" alt="">
+                            <span>подать заявку с HH.ru</span>
+                        </button>
+                    </div>
+                    <button class="vacancySingle__sidebar-share">Поделиться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="siteNav">
+    <div class="siteNav__wrapper">
+        <a class="siteNav__item" href="./../../index.html#aboutCompany">
+            <img class="icon" src="./../../uploads/menu-item-icon-01.png" alt="">
+            <img class="text" src="./../../uploads/ru.menu-item-text-01.png" alt="">
+        </a>
+        <a class="siteNav__item" href="./../../index.html#workingInfo">
+            <img class="icon" src="./../../uploads/menu-item-icon-02.png" alt="">
+            <img class="text" src="./../../uploads/ru.menu-item-text-02.png" alt="">
+        </a>
+        <a class="siteNav__item" href="./../../index.html#companyGames">
+            <img class="icon" src="./../../uploads/menu-item-icon-03.png" alt="">
+            <img class="text" src="./../../uploads/ru.menu-item-text-03.png" alt="">
+        </a>
+        <a class="siteNav__item" href="./../../index.html#vacancies">
+            <img class="icon" src="./../../uploads/menu-item-icon-04.png" alt="">
+            <img class="text" src="./../../uploads/ru.menu-item-text-04.png" alt="">
+        </a>
+        <a class="siteNav__item" href="./../../index.html#siteFaq">
+            <img class="icon" src="./../../uploads/menu-item-icon-05.png" alt="">
+            <img class="text" src="./../../uploads/ru.menu-item-text-05.png" alt="">
+        </a>
+    </div>
+</div>
+
+<div class="shareLink">
+    <div class="shareLink__wrapper">
+        <div class="shareLink__close"><img src="./../../uploads/share-close.png" alt=""></div>
+        <p class="shareLink__title center">Поделиться вакансией</p>
+        <div class="shareLink__copyLink">
+            <p class="shareLink__copyLink-title shareLink__subtitle">Ссылка</p>
+            <div class="shareLink__copyLink-label">
+                <p>Присоединяйтесь к нашей команде! https://labsystech.ru</p>
+                <div class="shareLink__copyLink-icon">
+                    <img class="default" src="./../../uploads/icon-copy.png" alt="">
+                    <img class="check-mark" src="./../../uploads/check-mark.png" alt="">
+                </div>
+            </div>
+        </div>
+        <p class="shareLink__subtitle">Поделиться</p>
+        <div class="shareLink__socials">
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://labystech.ru" target="_blank">
+                <img src="./../../uploads/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://wa.me/?text=Поделиться вакансией%20-%20Присоединяйтесь к нашей команде! https://labsystech.ru" target="_blank">
+            <img src="./../../uploads/whatsapp.png" alt="WhatsApp">
+            </a>
+            <a href="https://t.me/share/url?url=https://labystech.ru&text=Поделиться вакансией%20-%20Присоединяйтесь к нашей команде! https://labsystech.ru" target="_blank">
+            <img src="./../../uploads/tg.png" alt="Telegram">
+            </a>
+            <a href="https://twitter.com/intent/tweet?text=Поделиться вакансией%20-%20Присоединяйтесь к нашей команде! https://labsystech.ru" target="_blank">
+            <img src="./../../uploads/twitter.png" alt="Twitter (X)">
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://labystech.ru" target="_blank">
+                <img src="./../../uploads/fb.png" alt="Facebook">
+            </a>
+            <a href="mailto:?subject=Поделиться вакансией&body=Присоединяйтесь к нашей команде! https://labsystech.ru" target="_blank">
+            <img src="./../../uploads/mail.png" alt="Email">
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="./../../assets/js/jquery-3.7.0.min.js"></script>
+<script src="./../../assets/js/jquery.nice-select.min.js"></script>
+<script src="./../../assets/js/script.js"></script>
+<script>
+    function sendEmail(event) {
+        event.preventDefault();
+        var email = document.getElementById("email").value;
+        var name = document.getElementById("name").value;
+        var message = document.getElementById("message").value;
+        var subject = encodeURIComponent("Заявка на вакансию  Level designer от " + name);
+        var body = encodeURIComponent("Имя: " + name + "\nEmail: " + email + "\n\nСообщение:\n" + message);
+        var mailtoLink = "mailto:job@labsystech.ru?subject=" + subject + "&body=" + body;
+        window.location.href = mailtoLink;
+    }
+</script>
+</body>
+</html>

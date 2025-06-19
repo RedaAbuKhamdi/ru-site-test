@@ -26,13 +26,16 @@ jobs:
           mkdir -p ../games
           cp -r ./staging/* ../games/
 
+      - name: Disable Jekyll
+        run: touch .nojekyll
+
+
       - name: Build ru-site-test
         run: |
           echo "Uploads folder content:"
           ls -l ./uploads
           npm install
           npx gulp
-          cp -r pages legal assets uploads ads.txt app-ads.txt index.html style.css ./
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
